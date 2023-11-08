@@ -18,7 +18,7 @@ public class CinemaService {
         return cinemas; // 返回查询结果
     }
 
-    public void testUpdateCin(){
+    public void UpdateCin(){
         CinemaDAOImpl cinemaDAO = new CinemaDAOImpl();// 实例化CinemaService对象
         // Cinema updatedCinema = new Cinema(3, "xxx影院", "中原区科学大道");
         // cinemaDAO.updateCin(updatedCinema); // 更新ID为3的电影院信息
