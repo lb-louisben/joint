@@ -17,7 +17,7 @@ public class CinemaServiceTest {
     @Test
     public void selectCin1() {
         CinemaService cinemaService = new CinemaService();
-        // cinemaService.UpdateCin(new Cinema(3,"xxx影院","中原区科学大道"));
+        cinemaService.selectCin1("xx影院");
     }
 
     @Test
@@ -30,8 +30,8 @@ public class CinemaServiceTest {
     }
 
     @Test
-    public void testUpdateCin() {
+    public void UpdateCin() {
         CinemaService cinemaService = new CinemaService();
-        cinemaService.selectCin1("xx影院");
+        // cinemaService.UpdateCin(new Cinema(3,"xxx影院","中原区科学大道"));
     }
 }
