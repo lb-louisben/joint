@@ -32,6 +32,8 @@ public class CinemaServiceTest {
     @Test
     public void UpdateCin() {
         CinemaService cinemaService = new CinemaService();
+        // 我么有数据库，没得发访问
+        // 你得打开下面代码的注释
         // cinemaService.UpdateCin(new Cinema(3,"xxx影院","中原区科学大道"));
     }
 }
