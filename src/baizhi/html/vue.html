@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue Example</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+<div id="app"
+     style="width: 300px; height: 300px; background-color: green;"
+     @mouseover="showThanks"
+     @mouseleave="resetText"
+>
+  <h1 v-text="displayText" style="text-align: center;"></h1>
+</div>
+
+<script>
+  var app = new Vue({
+    el: '#app',
+    data: {
+      displayText: '把鼠标移到上面'
+    },
+    methods: {
+      showThanks: function () {
+        this.displayText = '谢谢';
+      },
+      resetText: function () {
+        this.displayText = '把鼠标移到上面';
+      }
+    }
+  })
+</script>
+</body>
+</html>
